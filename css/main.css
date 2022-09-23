@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: floralwhite;
+}
+
+.indent {
+    padding-left: 3%;
+}
+
+.box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 3%;
+}
+
+.fit {
+    width:-moz-fit-content; /* Firefox */
+    width:fit-content; /* other browsers */
+}
+
+.note {
+    background-color: mediumseagreen;
+    padding-bottom: 1rem;
+    margin-bottom: 40px;
+}
+
+.note label p {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.note label textarea {
+    padding: 2%;
+    min-width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+}
+@media (max-width: 840px) {
+    .note label textarea {
+        padding: 3%;
+    }
+}
+
+.button-box {
+    background-color: deepskyblue;
+}
+
+.button {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: lightcyan;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#deleteButton {
+    margin-right: 0.5rem;
+}

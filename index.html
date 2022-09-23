@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルメモ帳</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <meta name="twitter:image:src" content="./favicon.ico" />
+    <meta name="twitter:site" content="ちょー簡素なメモ帳サイト" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="ちょー簡素なメモ帳サイト" />
+    <meta name="twitter:description" content="ちょー簡素なメモ帳サイト" />
+    <meta property="og:image" content="./favicon.ico" />
+    <meta property="og:image:alt" content="ちょー簡素なメモ帳サイト">
+    <meta property="og:site_name" content="ちょー簡素なメモ帳サイト" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="ちょー簡素なメモ帳サイト" />
+    <meta property="og:url" content="https://momdev.tech/" />
+    <meta property="og:description" content="ちょー簡素なメモ帳サイト" />
+    <meta property=" profile:username" content="momerio" />
+</head>
+
+<body>
+    <header>
+        <h1 class="indent box fit title">シンプルメモ帳</h1>
+        <div class="indent box fit caution">
+            <p class="caution-title">注意</p>
+            <p>本サイトはCookieを使用しています．保存されたデータが外部サーバにアップロードされることはありません．<br>予告なくサービス公開を終了する可能性があります．データ損失の責任は取れませんのでご了承ください．
+            </p>
+            <p>ブラウザを閉じても入力内容は保存されます．(30日間)</p>
+        </div>
+    </header>
+
+    <div class="indent box note">
+        <label>
+            <p>メモ</p>
+            <textarea id="reviewTextarea" oninput="addTextFromCookie()"></textarea>
+            <!-- <textarea cols="120" rows="30" id="reviewTextarea" oninput="addTextFromCookie()"></textarea> -->
+        </label>
+    </div>
+
+    <div class="indent box fit button-box">
+        <input class="button" type="button" value="削除" id="deleteButton">
+        <input class="button" type="button" value="ダウンロード" id="saveButton">
+    </div>
+
+    <p class="indent box fit" id="infoArea"></p>
+
+    <footer>
+        <p><a href="https://momdev.tech/">開発者サイト</a></p>
+        <p>(c) 2022 MoM.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

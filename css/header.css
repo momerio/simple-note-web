@@ -1,0 +1,19 @@
+header {
+    padding: 40px 0;
+}
+
+.title {
+    background-color: gold;
+    margin-bottom: 40px;
+}
+
+.caution {
+    background-color: tomato;
+    color: white;
+}
+
+.caution-title {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
