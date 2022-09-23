@@ -15,8 +15,8 @@ body {
 }
 
 .fit {
-    width:-moz-fit-content; /* Firefox */
-    width:fit-content; /* other browsers */
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .note {
@@ -40,6 +40,7 @@ body {
     border: none;
     border-radius: 20px;
 }
+
 @media (max-width: 840px) {
     .note label textarea {
         padding: 3%;
